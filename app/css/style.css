@@ -1,0 +1,45 @@
+body, html {
+  background-color: #2ecc71;
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  overflow: hidden; }
+
+.not_fullscreen {
+  height: 100%;
+  text-align: center;
+  position: relative; }
+
+.not_fullscreen span {
+  color: white;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  margin-top: -12px;
+  width: 100%; }
+
+.fullscreen {
+  overflow: hidden;
+  display: none;
+  height: 100%; }
+
+.fullscreen .main-frame {
+  width: 100%;
+  height: 100%;
+  border: none; }
+
+.owl-carousel {
+  height: 100%; }
+  .owl-carousel .owl-dots {
+    z-index: 1;
+    position: relative;
+    top: -6%;
+    margin-top: 0px !important; }
+  .owl-carousel .owl-stage-outer, .owl-carousel .owl-stage, .owl-carousel .owl-item div {
+    height: 100%;
+    text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
