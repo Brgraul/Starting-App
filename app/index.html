@@ -10,6 +10,7 @@
 	<script type="text/javascript" src="js/app.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,400italic">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body style='background-color: #26C6DA'>
 	<div class='not_fullscreen'>
@@ -17,16 +18,39 @@
 	</div>
 	<div class='fullscreen'>
 		<div class="owl-carousel owl-theme">
-		  <div> Your Content </div>
-			<div> Your Content </div>
-			<div> Your Content </div>
-			<div> Your Content </div>
+		  <div class="slide-div">
+					<h3>This is the sample test for the slide sdaDsd, This is the sample </h3>
+					<button id="open_popup"></button>
+		  </div>
+			<div class="slide-div">
+					<h3>This is the sample test for the slide sdaDsd, This is the sample </h3>
+		  </div>
+			<div class="slide-div">
+					<h3>This is the sample test for the slide sdaDsd, This is the sample </h3>
+		  </div>
+			<div class="slide-div">
+					<h3>This is the sample test for the slide sdaDsd, This is the sample </h3>
+		  </div>
+		</div>
+		<div id="mighty">
+			<div>
+
+			</div>
+			<button id="return">
+				<i class="fa fa-arrow-left fa-3x" aria-hidden="true"></i>
+			</button>
 		</div>
 	</div>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			  $(".owl-carousel").owlCarousel({
 					items:1,
+				});
+				$("#open_popup").click(function(){
+				$( "#mighty" ).addClass( "selected" );
+				});
+				$("#return").click(function(){
+				$( "#mighty" ).removeClass( "selected" );
 				});
 		});
 	</script>
